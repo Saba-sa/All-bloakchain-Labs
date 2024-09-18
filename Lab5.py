@@ -30,15 +30,15 @@ print('sha-3:',result5)
 
 
 # BLAKE2
-# blake2_hash = hashlib.blake2b(name_modified).hexdigest()
-# print('BLACKE2:',blake2_hash)
+blake2_hash = hashlib.blake2b(name_modified).hexdigest()
+print('BLAKE2:', blake2_hash)
 
 #bcrypt
-# salt = bcrypt.gensalt()
-# result6 = bcrypt.hashpw(name_modified, salt)
-# print('bcrypt:',result6)
+salt = bcrypt.gensalt()
+result6 = bcrypt.hashpw(name_modified, salt)
+print('bcrypt:',result6)
 #ripemd160
-# result7=hashlib.new('ripemd160')
-# result7.update(name_modified)
-# haxh=result7.hexdigest()
-# print('ripemd160:',haxh)
+result7=hashlib.new('ripemd160')
+result7.update(name_modified)
+haxh=result7.hexdigest()
+print('ripemd160:',haxh)

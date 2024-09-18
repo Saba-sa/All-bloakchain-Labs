@@ -101,25 +101,7 @@ def readfilesinBlocks(hashes):
         hashes = new_hashes
     return hashes[0]
 
-# def file_in_block(filename, num_blocks=8):
-#     with open(filename, "rb") as file:
-#         content = file.read()
-    
-#     block_size = len(content) // num_blocks
-#     blocks = [content[i:i + block_size] for i in range(0, len(content), block_size)]
-#     return blocks
-
-# def blocks_to_hashes(blocks):
-#     return [calculateSHa256(block.hex()) for block in blocks]
-
-# filename = './Lab 7-8-2024.pdf'
-# blocks = file_in_block(filename)
-# hashes = blocks_to_hashes(blocks)
-# root = readfilesinBlocks(hashes)
-
-# print(root)
-# question 4
-def file_in_block(filename, num_blocks=1024):
+def file_in_block(filename, num_blocks=8):
     with open(filename, "rb") as file:
         content = file.read()
     

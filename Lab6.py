@@ -1,8 +1,9 @@
 import hashlib
 # online hash:3194f08145c2c0822af5663e65dd35be59f73a121cff8b238c1b14467fdec048
 online_hash=input("please enter online hash")
-with open('./Lab6-8-2024.pdf',"rb" )as lab6:
-  lab6_binary=lab6.read()
+
+with open('./Lab 6-8-2024.pdf', "rb") as lab6:
+    lab6_binary = lab6.read()
 
 def comparison(a,b):
   if(a==b):
@@ -53,5 +54,4 @@ print('file2 sha256',file2sha256)
   
 resultofMD5=comparison(file1md5,file2md5)
 resultofSha256=comparison(file1sha256,file2sha256)
-
 
